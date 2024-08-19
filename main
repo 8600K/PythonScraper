@@ -1,0 +1,114 @@
+
+import script3
+import script6
+
+import pandas as pd
+import numpy as np
+
+# TODO Rename these scripts to be better, yeah?
+
+# Script 3 = Bovada
+# Script 6 = DraftKings
+
+df2 = pd.read_csv('Luckbox.csv')
+#df5 = pd.read_csv('Thunderpick.csv')
+df4 = pd.read_csv('Rivalry.csv')
+df7 = pd.read_csv('Pinnacle.csv')
+
+
+df3 = pd.DataFrame(script3.lol_df)
+df6 = pd.DataFrame(script6.lol_df)
+
+df3 = df3.reset_index()
+df6 = df6.reset_index()
+
+#df_all = pd.concat([df3, df6], axis=0)
+#print(df_all)
+
+pd.set_option('display.max_rows', None)
+
+
+def compare_df(df0, df1, site_name0, site_name1):
+    output = pd.merge(df0, df1, how='inner', suffixes=(f'_{site_name0}', f'_{site_name1}'), on=['Team1', 'Team2'])
+    
+    temp_left0 = int(output[f'Win1_{site_name0}'].to_string(index=False)) # Left database left winner. 
+    temp_right0 = int(output[f'Win1_{site_name1}'].to_string(index=False)) # Right database left winner.
+
+    temp_left1 = int(output[f'Win2_{site_name0}'].to_string(index=False)) # Left database right winner.
+    temp_right1 = int(output[f'Win2_{site_name1}'].to_string(index=False)) # Right database right winner.
+
+    print(temp_left0, temp_right0, temp_left1, temp_right1)
+
+    # TODO Let's just see how far we get. So a successful case will be -120 \ -105 (tie). Would be helpful if I can print the site_name after the score. Let's go.
+    # Temps...
+    winner0 = 0
+    winner1 = 0
+
+
+    if temp_left0 == temp_right0:
+        print("They're equal, I don't know what to do here.")
+        winner0 = temp_left0
+
+    elif temp_left0 < 0 and temp_right0 < 0:
+        if temp_left0 > temp_right0:
+            winner0 = temp_right0
+        else:
+            winner0 = temp_left0
+    else:
+        if temp_left0 > temp_right0:
+            winner0 = temp_left0
+        else:
+            winner0 = temp_right0
+
+    if temp_left1 == temp_right1:
+        print("They're equal pt2, I don't know what to do here.")
+        winner1 = temp_left1
+    
+    elif temp_left1 < 0 and temp_right1 < 0:
+        if temp_left1 > temp_right1:
+            winner1 = temp_right1
+        else:
+            winner1 = temp_left1
+    else:
+        if temp_left1 > temp_right1:
+            winner1 = temp_left1
+        else:
+            winner1 = temp_right1
+
+    #TODO Now just import the rest of the scripts in, and then cycle through.
+    # Make a good algorithm, cause I don't think I want to merge all of them together on an inner
+    # That would only catch a few matches at most. 
+    # For testing I would import the df as a csv file, we can work with that, that way I 
+    # Don't need to keep running a scraper every single time while I cook up my algorithm.
+    # And then it's just website time! 
+    # Nice nice.
+    # So instead why don't we merge 2 at a time, and keep a counter for how many times we 
+    # get the same match. 
+    # For instance, Mad Lions v Fanatic is in DK and Bovada, we count that as 1, if it's also in Thunderpicks we now count 2.
+    # This way we can give best values. 
+    # 
+
+    # For ties... IDK custom variable?
+    # Just pick any value, i dunno...
+
+    print("Winner 0:", winner0, '\n', "Winner 1:", winner1)
+
+    
+
+#compare_df(df3, df6, 'Bovada', 'DraftKings')
+
+#compare_df(df2, df3, 'Luckbox', 'Bovada')
+
+compare_df(df4, df7, 'Rivalry', 'Pinnacle')
+
+
+
+# --------------------------------------------------------------------------------
+ 
+
+
+# 'right' = fnatic 1st, mad lions 2nd.
+
+# Bovada is 'wrong', rivalry is 'wrong', pinnacle is 'wrong' 
+
+# Draftkings / Thunderpick / Luckbox / Barstool should be alright. 

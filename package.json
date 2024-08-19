@@ -1,0 +1,19 @@
+{
+  "name": "pythonscraper",
+  "version": "1.0.0",
+  "description": "TestingScraper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test",
+    "web",
+    "scraper"
+  ],
+  "author": "Miles Engelbrecht",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

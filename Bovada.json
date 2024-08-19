@@ -1,0 +1,428 @@
+[
+    {
+        "path": [
+            {
+                "id": "9417391",
+                "link": "/esports/league-of-legends/world-championship",
+                "description": "World Championship",
+                "type": "LEAGUE",
+                "sportCode": "ESPT",
+                "order": 9223372036854775807,
+                "leaf": true,
+                "current": false
+            },
+            {
+                "id": "117310",
+                "link": "/esports/league-of-legends",
+                "description": "League Of Legends",
+                "type": "COMPETITION",
+                "sportCode": "ESPT",
+                "order": 2,
+                "leaf": false,
+                "current": true
+            },
+            {
+                "id": "6000",
+                "link": "/esports",
+                "description": "Esports",
+                "type": "SPORT",
+                "sportCode": "ESPT",
+                "order": 1,
+                "leaf": false,
+                "current": false
+            }
+        ],
+        "events": [
+            {
+                "id": "12601825",
+                "description": "NRG vs G2",
+                "type": "GAMEEVENT",
+                "link": "/esports/league-of-legends/world-championship/nrg-g2-202310280300",
+                "status": "U",
+                "sport": "ESPT",
+                "startTime": 1698476400000,
+                "live": false,
+                "awayTeamFirst": false,
+                "denySameGame": "NO",
+                "teaserAllowed": true,
+                "competitionId": "9417391",
+                "notes": "",
+                "numMarkets": 82,
+                "lastModified": 1698425247631,
+                "competitors": [
+                    {
+                        "id": "12601825-11980160",
+                        "name": "NRG",
+                        "home": true
+                    },
+                    {
+                        "id": "12601825-11898280",
+                        "name": "G2",
+                        "home": false
+                    }
+                ],
+                "displayGroups": [
+                    {
+                        "id": "100-344",
+                        "description": "Game Lines",
+                        "defaultType": true,
+                        "alternateType": false,
+                        "markets": [
+                            {
+                                "id": "289465920",
+                                "descriptionKey": "Main Dynamic Asian Handicap",
+                                "description": "Point Spread",
+                                "key": "2W-HCAP",
+                                "marketTypeId": "120900",
+                                "status": "O",
+                                "singleOnly": false,
+                                "notes": "",
+                                "period": {
+                                    "id": "12146",
+                                    "description": "Game",
+                                    "abbreviation": "G",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "outcomes": [
+                                    {
+                                        "id": "1457099284",
+                                        "description": "NRG",
+                                        "status": "O",
+                                        "type": "H",
+                                        "competitorId": "12601825-11980160",
+                                        "price": {
+                                            "id": "14851759179",
+                                            "handicap": "1.5",
+                                            "american": "+130",
+                                            "decimal": "2.300",
+                                            "fractional": "13/10",
+                                            "malay": "-0.77",
+                                            "indonesian": "1.30",
+                                            "hongkong": "1.30"
+                                        }
+                                    },
+                                    {
+                                        "id": "1457099285",
+                                        "description": "G2",
+                                        "status": "O",
+                                        "type": "A",
+                                        "competitorId": "12601825-11898280",
+                                        "price": {
+                                            "id": "14851759180",
+                                            "handicap": "-1.5",
+                                            "american": "-170",
+                                            "decimal": "1.588235",
+                                            "fractional": "10/17",
+                                            "malay": "0.59",
+                                            "indonesian": "-1.70",
+                                            "hongkong": "0.59"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "289465919",
+                                "descriptionKey": "Head To Head",
+                                "description": "Moneyline",
+                                "key": "2W-12",
+                                "marketTypeId": "120792",
+                                "status": "O",
+                                "singleOnly": false,
+                                "notes": "",
+                                "period": {
+                                    "id": "12146",
+                                    "description": "Game",
+                                    "abbreviation": "G",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "outcomes": [
+                                    {
+                                        "id": "1457099282",
+                                        "description": "NRG",
+                                        "status": "O",
+                                        "type": "H",
+                                        "competitorId": "12601825-11980160",
+                                        "price": {
+                                            "id": "14850803112",
+                                            "american": "+460",
+                                            "decimal": "5.60",
+                                            "fractional": "23/5",
+                                            "malay": "-0.22",
+                                            "indonesian": "4.60",
+                                            "hongkong": "4.60"
+                                        }
+                                    },
+                                    {
+                                        "id": "1457099283",
+                                        "description": "G2",
+                                        "status": "O",
+                                        "type": "A",
+                                        "competitorId": "12601825-11898280",
+                                        "price": {
+                                            "id": "14823239620",
+                                            "american": "-800",
+                                            "decimal": "1.125",
+                                            "fractional": "1/8",
+                                            "malay": "0.12",
+                                            "indonesian": "-8.00",
+                                            "hongkong": "0.12"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "289465967",
+                                "descriptionKey": "Main Dynamic Over/Under",
+                                "description": "Total",
+                                "key": "2W-OU",
+                                "marketTypeId": "121106",
+                                "status": "O",
+                                "singleOnly": false,
+                                "notes": "",
+                                "period": {
+                                    "id": "12146",
+                                    "description": "Game",
+                                    "abbreviation": "G",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "outcomes": [
+                                    {
+                                        "id": "1457099542",
+                                        "description": "Over",
+                                        "status": "O",
+                                        "type": "O",
+                                        "price": {
+                                            "id": "14855705315",
+                                            "handicap": "2.5",
+                                            "american": "+170",
+                                            "decimal": "2.700",
+                                            "fractional": "17/10",
+                                            "malay": "-0.59",
+                                            "indonesian": "1.70",
+                                            "hongkong": "1.70"
+                                        }
+                                    },
+                                    {
+                                        "id": "1457099543",
+                                        "description": "Under",
+                                        "status": "O",
+                                        "type": "U",
+                                        "price": {
+                                            "id": "14855705316",
+                                            "handicap": "2.5",
+                                            "american": "-225",
+                                            "decimal": "1.444444",
+                                            "fractional": "4/9",
+                                            "malay": "0.44",
+                                            "indonesian": "-2.25",
+                                            "hongkong": "0.44"
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "order": 1
+                    }
+                ]
+            },
+            {
+                "id": "12601881",
+                "description": "T1 vs BLG",
+                "type": "GAMEEVENT",
+                "link": "/esports/league-of-legends/world-championship/t1-blg-202310280600",
+                "status": "U",
+                "sport": "ESPT",
+                "startTime": 1698487200000,
+                "live": false,
+                "awayTeamFirst": false,
+                "denySameGame": "NO",
+                "teaserAllowed": true,
+                "competitionId": "9417391",
+                "notes": "",
+                "numMarkets": 76,
+                "lastModified": 1698425378590,
+                "competitors": [
+                    {
+                        "id": "12601881-16433454",
+                        "name": "T1",
+                        "home": true
+                    },
+                    {
+                        "id": "12601881-16515016",
+                        "name": "BLG",
+                        "home": false
+                    }
+                ],
+                "displayGroups": [
+                    {
+                        "id": "100-344",
+                        "description": "Game Lines",
+                        "defaultType": true,
+                        "alternateType": false,
+                        "markets": [
+                            {
+                                "id": "289468102",
+                                "descriptionKey": "Main Dynamic Asian Handicap",
+                                "description": "Point Spread",
+                                "key": "2W-HCAP",
+                                "marketTypeId": "120900",
+                                "status": "O",
+                                "singleOnly": false,
+                                "notes": "",
+                                "period": {
+                                    "id": "12146",
+                                    "description": "Game",
+                                    "abbreviation": "G",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "outcomes": [
+                                    {
+                                        "id": "1457107926",
+                                        "description": "T1",
+                                        "status": "O",
+                                        "type": "H",
+                                        "competitorId": "12601881-16433454",
+                                        "price": {
+                                            "id": "14823685556",
+                                            "handicap": "-1.5",
+                                            "american": "+250",
+                                            "decimal": "3.500",
+                                            "fractional": "5/2",
+                                            "malay": "-0.40",
+                                            "indonesian": "2.50",
+                                            "hongkong": "2.50"
+                                        }
+                                    },
+                                    {
+                                        "id": "1457107927",
+                                        "description": "BLG",
+                                        "status": "O",
+                                        "type": "A",
+                                        "competitorId": "12601881-16515016",
+                                        "price": {
+                                            "id": "14823685557",
+                                            "handicap": "1.5",
+                                            "american": "-350",
+                                            "decimal": "1.285714",
+                                            "fractional": "2/7",
+                                            "malay": "0.29",
+                                            "indonesian": "-3.50",
+                                            "hongkong": "0.29"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "289468101",
+                                "descriptionKey": "Head To Head",
+                                "description": "Moneyline",
+                                "key": "2W-12",
+                                "marketTypeId": "120792",
+                                "status": "O",
+                                "singleOnly": false,
+                                "notes": "",
+                                "period": {
+                                    "id": "12146",
+                                    "description": "Game",
+                                    "abbreviation": "G",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "outcomes": [
+                                    {
+                                        "id": "1457107924",
+                                        "description": "T1",
+                                        "status": "O",
+                                        "type": "H",
+                                        "competitorId": "12601881-16433454",
+                                        "price": {
+                                            "id": "14854198158",
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "malay": "0.91",
+                                            "indonesian": "-1.10",
+                                            "hongkong": "0.91"
+                                        }
+                                    },
+                                    {
+                                        "id": "1457107925",
+                                        "description": "BLG",
+                                        "status": "O",
+                                        "type": "A",
+                                        "competitorId": "12601881-16515016",
+                                        "price": {
+                                            "id": "14854198157",
+                                            "american": "-120",
+                                            "decimal": "1.833333",
+                                            "fractional": "5/6",
+                                            "malay": "0.83",
+                                            "indonesian": "-1.20",
+                                            "hongkong": "0.83"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "289468142",
+                                "descriptionKey": "Main Dynamic Over/Under",
+                                "description": "Total",
+                                "key": "2W-OU",
+                                "marketTypeId": "121106",
+                                "status": "O",
+                                "singleOnly": false,
+                                "notes": "",
+                                "period": {
+                                    "id": "12146",
+                                    "description": "Game",
+                                    "abbreviation": "G",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "outcomes": [
+                                    {
+                                        "id": "1457108007",
+                                        "description": "Over",
+                                        "status": "O",
+                                        "type": "O",
+                                        "price": {
+                                            "id": "14854869908",
+                                            "handicap": "2.5",
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "malay": "0.91",
+                                            "indonesian": "-1.10",
+                                            "hongkong": "0.91"
+                                        }
+                                    },
+                                    {
+                                        "id": "1457108008",
+                                        "description": "Under",
+                                        "status": "O",
+                                        "type": "U",
+                                        "price": {
+                                            "id": "14854194257",
+                                            "handicap": "2.5",
+                                            "american": "-120",
+                                            "decimal": "1.833333",
+                                            "fractional": "5/6",
+                                            "malay": "0.83",
+                                            "indonesian": "-1.20",
+                                            "hongkong": "0.83"
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "order": 1
+                    }
+                ]
+            }
+        ]
+    }
+]
